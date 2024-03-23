@@ -1,14 +1,16 @@
 # PAVEENA NODE JS TEST
 
-### `npm install`
+# Install
+npm install
 
-### `npm start`
+# Start
+npm start
 
 # Get List
-### `GET : http://localhost:3005/todo/list?pageSize=1&page=2`
+GET : http://localhost:3005/todo/list?pageSize=1&page=2
 
 # Create
-### `POST: http://localhost:3005/todo`
+POST: http://localhost:3005/todo
 Example Body
 {
     "title": "TODO3",
@@ -16,7 +18,7 @@ Example Body
 }
 
 # Update
-### `PUT : http://localhost:3005/todo/:id`
+PUT : http://localhost:3005/todo/:id
 
 Example Body
 {
@@ -24,4 +26,4 @@ Example Body
 }
 
 # Delete
-### `DELETE : http://localhost:3005/todo/:id`
+DELETE : http://localhost:3005/todo/:id
