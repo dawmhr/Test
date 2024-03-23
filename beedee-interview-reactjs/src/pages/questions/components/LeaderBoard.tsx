@@ -17,7 +17,7 @@ type Props = {
   key?: string;
 } & UseTestProps;
 const LeaderBoard = (props: Props) => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const { ...useTestProps } = props;
   const {
     onStartTest = () => {},
@@ -25,7 +25,6 @@ const LeaderBoard = (props: Props) => {
     currentUser = "",
   } = useTestProps;
   const data: Score[] = getRanking();
-  console.log("ranking", data);
 
   const getListItem = (item: Score, index: number) => {
     const isMe = item.username === currentUser;
@@ -51,7 +50,7 @@ const LeaderBoard = (props: Props) => {
       <List.Item key={item.username}>
         <div className='score-item'>
           {isMe ? (
-            <Badge.Ribbon text={isMe ? "ลำดับของคุณ" : ""} color="green">
+            <Badge.Ribbon text={isMe ? "ลำดับของคุณ" : ""} color='magenta'>
               {content}
             </Badge.Ribbon>
           ) : (
@@ -73,10 +72,17 @@ const LeaderBoard = (props: Props) => {
         </Col>
         <Col span={24}>
           <Flex gap='small'>
-            <Button type='primary' block size="large" onClick={() => navigate('/')}>
+            <Button
+              type='primary'
+              block
+              size='large'
+              onClick={() => navigate("/")}
+            >
               Home Page
             </Button>
-            <Button block size="large" onClick={onStartTest}>Try again</Button>
+            <Button block size='large' onClick={onStartTest}>
+              Try again
+            </Button>
           </Flex>
         </Col>
       </Row>

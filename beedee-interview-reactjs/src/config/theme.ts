@@ -1,6 +1,6 @@
 export const theme = {
   token: {
-    colorPrimary: "#247aff",
+    colorPrimary: "#22c799",
     fontFamily: 'IBMPlexSansThaiMedium',
   },
 };

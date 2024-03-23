@@ -7,7 +7,7 @@ npm install
 npm start
 
 # Get List
-GET : http://localhost:3005/todo/list?pageSize=1&page=2
+GET : http://localhost:3005/todo/list?pageSize=1&page=1
 
 # Create
 POST: http://localhost:3005/todo

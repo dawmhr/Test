@@ -5,8 +5,6 @@ export interface Todo {
   completed: boolean;
 }
 
-
 export interface Error {
-    message: string;
-  }
-  
+  message: string;
+}
