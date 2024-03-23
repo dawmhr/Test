@@ -11,7 +11,7 @@ export default class TodoController {
   static getAllTodos(): Todo[] {
     try {
       const data = fs.readFileSync(this.STORAGE_FILE, "utf8");
-      return JSON.parse(data);
+      return JSON.parse(data || '');
     } catch (error) {
       console.error("Error reading todos from file:", error);
       return [];
